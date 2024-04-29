@@ -30,12 +30,12 @@ def get_content(query):
         
         # Generate content using OpenAI's GPT-4 model
         if descriptions:
-          NewsCont = "\n".join([f"Article {i + 1}: {description}" for i, description in enumerate(descriptions)])
+          news_content = "\n".join([f"Article {i + 1}: {description}" for i, description in enumerate(descriptions)])
           response = client.chat.completions.create(
               model="gpt-4",
               messages=[
                   {"role": "system", "content": "You have to only generate and reply a news blog of 2 page content body. The title, related articles, some content is provided by the user from trusted sources. Skip the title part, start with introduction"},
-                  {"role": "user", "content": "Here it is " + NewsCont}
+                  {"role": "user", "content": "Here it is " + news_content}
               ]
           )
           final_content = response.choices[0].message.content
@@ -57,12 +57,12 @@ def get_content(query):
             # Generate content using OpenAI's GPT-4 model
             if descriptions:
               print(f"Description is found {descriptions}")
-              NewsCont = "\n".join([f"Article {i + 1}: {description}" for i, description in enumerate(descriptions)])
+              news_content = "\n".join([f"Article {i + 1}: {description}" for i, description in enumerate(descriptions)])
               response = client.chat.completions.create(
                   model="gpt-4",
                   messages=[
                       {"role": "system", "content": "The title, related articles, some content is provided by the user from trusted sources. You have to only generate and reply a news blog of 1 page content body only.Your reply will be pasted directly inside the body of article. Skip the title part and start with introduction directly"},
-                      {"role": "user", "content": "Here it is " + NewsCont}
+                      {"role": "user", "content": "Here it is " + news_content}
                   ]
               )
               final_content = response.choices[0].message.content

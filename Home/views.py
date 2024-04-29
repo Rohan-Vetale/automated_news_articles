@@ -26,9 +26,9 @@ def search(request):
         if query.lower() == "search" or not query:
             # Render default content or search page when query is empty or "search"
             context = {
-                "titlez": "Search for a topic",
-                "Content": "Get an AI generated article according to the search",
-                "imgUrl": settings.STATIC_URL + "type.jpg"  # Use settings for static file path
+                "article_title": "Search for a topic",
+                "article_content": "Get an AI generated article according to the search",
+                "img_url": settings.STATIC_URL + "type.jpg"  # Use settings for static file path
             }
             return render(request, 'search.html', context)
 
@@ -49,24 +49,24 @@ def search(request):
             else:
                 print(content_status)
                 context = {
-                "titlez": "No Articles found, try searching with other keywords",
-                "Content": "Kindly search again!",
-                "imgUrl": settings.STATIC_URL + "type.jpg" 
+                "article_title": "No Articles found, try searching with other keywords",
+                "article_content": "Kindly search again!",
+                "img_url": settings.STATIC_URL + "type.jpg" 
                 }
                 return render(request, 'search.html', context)
         else:
             context = {
-                "titlez": "Search for a topic",
-                "Content": "Get an AI-generated article according to the search",
-                "imgUrl": settings.STATIC_URL + "type.jpg" 
+                "article_title": "Search for a topic",
+                "article_content": "Get an AI-generated article according to the search",
+                "img_url": settings.STATIC_URL + "type.jpg" 
             }
             return render(request, 'search.html', context)
 
     else:
         context = {
-            "titlez": "Search for a topic",
-            "Content": "Get an AI-generated article according to the search",
-            "imgUrl": "/static/type.jpg"
+            "article_title": "Search for a topic",
+            "article_content": "Get an AI-generated article according to the search",
+            "img_url": "/static/type.jpg"
         }
         return render(request, 'search.html', context)
 
