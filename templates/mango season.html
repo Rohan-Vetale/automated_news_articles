@@ -1,0 +1,232 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mango seasonSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/" id="myForm">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> The Best Baking Shows on Netflix </h2>
+            
+<img src="https://api.time.com/wp-content/uploads/2024/03/NetflixBaking.png" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>Red is the color of passion, love, and now, the hottest shoe trend of the season! This unexpectedly versatile hue is turning heads, and it has been embraced by style-conscious celebrities everywhere. Whether in glossy patent-leather heels, scarlet sneakers, or burgundy boots, crimson kicks are making their mark in celebrity wardrobes, inspiring us all to bring a pop of color to our outfits.
+
+Red shoes serve as eye-catching statement pieces in any look, with the power to elevate an understated ensemble or add a sultry appeal to a black or white dress. Actress Emma Stone, for instance, flaunts her crimson heels peeping out beneath a refined black dress, amplifying her red carpet glamor. On the opposite end of the spectrum, Cardi B styled her fiery red boots with a matching red outfit, daring to embody the color head-to-toe and pushing fashion boundaries in her signature style. 
+
+Those with a more relaxed sense of style can look to celebrities like Rihanna, who pairs her red sneakers with casual denim and a simple white tee, illustrating that the red shoe trend spans far beyond formal wear. The succulent red footwear makes a standout impression against the neutral outfit, demonstrating the spectacular versatility of the color. 
+
+The red shoe trend isn&#x27;t limited to only bold choices but has also been spotted in more muted tones in the celebrity wardrobes. Dakota Johnson&#x27;s classy ensemble features bordeaux loafers paired with a midi dress for a more understated and elegant look. Similarly, Reese Witherspoon&#x27;s wine-colored heels lend a touch of sophistication to her ’60s inspired polka dotted dress, showing how this trend seamlessly merges with various style preferences and eras.
+
+More than just a trend, this seemingly daunting color demonstrates how style and individuality are inherently intertwined. Celebrities are leading the way by incorporating this bold footwear choice into numerous scenarios, from low-key everyday outfits to dazzling red carpet ensembles. 
+
+So, if you&#x27;ve been considering adding a pop of color to your shoe closet, look no further than a pair of red shoes. They&#x27;re versatile, they&#x27;re innovative, and they add a flash of fun to every outfit. Consequently, the vibrant and bold red shoe trend proves to be more than just a passing fad—it&#x27;s a fashionable leap that’s sure to make a lasting impact.
+
+Inspired by the richness of the hue and the boldness of picks by our favorite celebrities, the red shoe trend is more than fashion; it is a statement. It conveys a sense of confidence and style that transcends seasonal trends and fads. So why wait? Follow the footsteps of our favorite starlets and make the world your runway with a pair of fiery red shoes. Remember, in fashion, as in life, it&#x27;s a bold move that can leave a lasting impression.
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Success!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Form submitted successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script></p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

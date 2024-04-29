@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pppppppSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Automated News Articles</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> I 80 Gold : Convertible Debenture Indenture dated February 22, 2023 - Form 6-K </h2>
+            
+<img src="https://www.marketscreener.com/images/twitter_MS_fdnoir.png" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>The Canadian gold mining company, i-80 Gold Corp., and the financial services corporation, the TSX Trust Company, have officially announced a new convertible debenture indenture in a recent press release. Their launch is dated February 22, 2023, offering a unique financial instrument to investors which portrays both companies’ confidence in the robust growth prospects of the precious metals sector. 
+
+To start with, it&#x27;s important to get a clear understanding of what a convertible debenture is. It is essentially a type of loan issued by a company that can be converted into shares of the company’s stock. Investors are attracted to convertible debentures for two main reasons. Firstly, they receive regular interest payments from the debenture. Secondly, they have the potential benefit of being able to convert the debenture into equity if the company&#x27;s stock price increases significantly.
+
+This financial vehicle, then, being issued by i-80 Gold Corp. and the TSX Trust Company, gives investors the opportunity to lend money to the company in return for a specified amount of interest. If the company’s stock performs well, the investors may choose to convert this debt into an ownership stake in the company. This can provide a potentially high-return investment, particularly in a thriving and often volatile market such as that of precious metals.
+
+Moreover, the announcement of this convertible debenture idea holds far-reaching implications for the larger financial ecosystem. It serves as an indication that i-80 Gold Corp. is willing to bet on its successful future and is ready to share this potential success with its investors.
+
+It&#x27;s also worth noting the significance of TSX Trust Company&#x27;s role in this financial endeavour. As a corporation providing a broad range of financial services, their involvement in this debenture highlights the trust and credibility placed in the performance of i-80 Gold Corp. in the gold mining sector.
+
+In terms of potential risks, investors are cautioned to take into account various factors. These include the general economic conditions, the financial performance of the issuer, and the historical and projected price trends of gold. Also, the convertible nature of the debenture means that outstanding debentures can dilute the shares of current stockholders if large numbers of them are converted.
+
+In conclusion, this convertible debenture indenture issued by i-80 Gold Corp and the TSX Trust Company represents a promising but calculated strategy that balances risk and reward. It seamlessly combines the advantage of debt instruments- stable interest payments, with the potential profits of equity investment, thereby offering investors a substantial financial opportunity in the precious metals space.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

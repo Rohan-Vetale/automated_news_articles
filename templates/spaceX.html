@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spacexSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/" id="myForm">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> Pentagon’s X-37B space plane to be launched on Sunday, mission unknown - The Washington Post </h2>
+            
+<img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/525MM2COANBU5LRKIMKZUNQQVM.jpg&amp;w=1440" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>Introduction:
+
+SpaceX&#x27;s Falcon Heavy, which is set to embark on its eighth orbital mission, is once again generating excitement among space enthusiasts. Fondly referred to as the &quot;space plane,&quot; this remarkable spacecraft has captured the interest of many due to its mysterious nature. With all its previous missions cloaked in secrecy, the upcoming launch on Sunday promises to be another enigmatic journey into the unknown.
+
+Dubbed as one of the most powerful rockets in existence, Falcon Heavy has already left an indelible mark on the aerospace industry. Developed by Elon Musk&#x27;s SpaceX, this colossal spacecraft has consistently impressed with its remarkable capabilities. With its eighth orbital mission fast approaching, anticipation has reached an all-time high.
+
+Secrecy Shrouding Previous Missions:
+
+One of the standout aspects of the Falcon Heavy&#x27;s previous missions is the veil of secrecy surrounding them. While some may argue that secrecy is a common practice within the space industry, the level of secrecy surrounding this particular space plane is unparalleled. Despite the lack of official information, rumors and speculations have circulated, further fueling curiosity and excitement.
+
+The Enigmatic Eighth Mission:
+
+As Sunday&#x27;s launch draws near, space enthusiasts and the general public alike are eager to witness what the Falcon Heavy&#x27;s eighth mission has in store. The mission objectives, payload details, and even the destination of this mission have been kept under wraps, leaving ample room for speculation and imagination.
+
+Industry experts believe that the secrecy surrounding the mission could be attributed to the potential involvement of government agencies or classified payloads. Elon Musk, known for his ambitious ventures and futuristic visions, has often expressed his desire to contribute towards space exploration by collaborating with various organizations, both public and private.
+
+The Power of Falcon Heavy:
+
+The Falcon Heavy has been lauded for its awe-inspiring power and capabilities. With a maximum payload capacity of 64 metric tons, it can deliver a wide range of payloads into space. Its ability to generate a staggering 5 million pounds of thrust during liftoff has made it a favored choice for both commercial and government missions.
+
+Notably, this reusable spacecraft has the potential to revolutionize space travel by significantly reducing the cost of launching payloads into orbit. SpaceX has already proved the success of the Falcon Heavy by landing its boosters back on Earth after launch, enabling multiple flights from the same vehicle.
+
+Excitement and Anticipation:
+
+As the hours count down to Sunday&#x27;s launch, excitement and anticipation continue to grow. Space enthusiasts around the world eagerly await the moment when Falcon Heavy&#x27;s engines roar to life, propelling it into the cosmos. While the exact details of the mission remain veiled, the enigmatic nature of the previous missions sets the stage for another enthralling journey beyond Earth&#x27;s atmosphere.
+
+Conclusion:
+
+The SpaceX Falcon Heavy, renowned for its power and enigmatic missions, is on the verge of embarking on its eighth orbital mission. With secrecy surrounding its previous missions and a notable absence of official information, speculation and excitement have reached fever pitch. As we wait for Sunday&#x27;s launch, the aerospace industry and space enthusiasts worldwide eagerly anticipate yet another captivating adventure into the unknown.
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Success!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Form submitted successfully!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script></p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

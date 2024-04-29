@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block title1 %}Home Page{% endblock title1 %}
+{% block bigHeader %}
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/9ae6a5ff-059e-4133-9a36-1052225bb522/ohTICOzfHN.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Top Headlines</span>
+    </div>
+</div>
+{% endblock bigHeader %}
+
+
+
+
+
+
+
+
+
+{% block section1 %}
+<article>
+    <h2>Animal box office collection day 5 early reports: Ranbir Kapoor blockbuster approaches Rs 450 cr globally, remains number 1 film ahead of Napoleon and Hunger Games</h2>
+    <p>The unfortunate clash with &quot;Animal&quot; has undoubtedly affected &quot;Sam Bahadur&#x27;s&quot; box office performance. Ranbir Kapoor&#x27;s star power and the anticipation surrounding his multi-starrer crime thriller have diverted attention and divided the audience&#x27;s attention. This clash of two highly anticipated films has created a tough battle for both, ultimately resulting in less than favorable collections for &quot;Sam Bahadur&quot; on its sixth day.</p>
+        <form class="row g-3 my-3" method = "post" action = "/search/">
+            {% csrf_token %}
+            {% block tokenBlock %} {{csrff}}{% endblock tokenBlock %} 
+            
+            
+              <input type="hidden" class="form-control" id="inputtext" name = "queryText" value = "animal box office collection">
+            
+            <div class="col-auto ">
+              <button type="submit" class="btn btn-primary mx-2">Read more</button>
+            </div>
+          </form>
+        
+</article>
+
+<article>
+    <h2>Elon Musk’s Media Matters Lawsuit Will Have a ‘Chilling Effect’</h2>
+    <p>Tesla CEO Elon Musk has been facing significant backlash for his promotion of an antisemitic conspiracy theory, which has led several advertisers to reconsider promoting their products on the platform.  With concerns mounting over potential financial implications, Musk has come forward with a bold message for these advertisers.
+        
+        </p>
+        <form class="row g-3 my-3" method = "post" action = "/search/">
+            {% csrf_token %}
+             
+            
+            
+              <input type="hidden" class="form-control" id="inputtext" name = "queryText" value = "elon musk">
+            
+            <div class="col-auto ">
+              <button type="submit" class="btn btn-primary mx-2">Read more</button>
+            </div>
+          </form>
+</article>
+<article>
+    <h2> Peter Nygard: Fashion mogul guilty of sex assaults </h2>
+    <p>In the wake of scandal and disgrace, a surprising voice has emerged from the shadows - the son of a once powerful mogul. This unexpected critic has not only spoken out against his own father&#x27;s actions but has become an advocate for justice and accountability. In this article, we delve into the story of the disgraced mogul&#x27;s son, his journey from darkness to light, and the impact he is making on the fight against injustice.</p>
+        <form class="row g-3 my-3" method = "post" action = "/search/">
+            {% csrf_token %}
+            
+            
+            
+              <input type="hidden" class="form-control" id="inputtext" name = "queryText" value = "fashion week">
+            
+            <div class="col-auto ">
+              <button type="submit" class="btn btn-primary mx-2">Read more</button>
+            </div>
+          </form>
+</article>
+
+<article>
+    <h2>SpaceX Falcon 9 Launches Starlink 6-33 - Bloomberg Television</h2>
+    <p>The Falcon 9 rocket, a renowned workhorse of SpaceX, has consistently proven its reliability and efficiency over the years. This particular launch was no exception as it carried 23 Starlink satellites to join their comrades already orbiting high above us.
+
+        At precisely 12:07 p.m. EST (0507 UTC), the Falcon 9 roar filled the air, propelling the spacecraft into the sky with precision and grace. As the rocket embarked on its journey, the anticipation and excitement among those witnessing the event were palpable, as they knew that this launch would play a vital role in expanding our access to the internet worldwide.</p>
+        <form class="row g-3 my-3" method = "post" action = "/search/">
+            {% csrf_token %}
+            
+            
+            
+              <input type="hidden" class="form-control" id="inputtext" name = "queryText" value = "spaceX">
+            
+            <div class="col-auto ">
+              <button type="submit" class="btn btn-primary mx-2">Read more</button>
+            </div>
+          </form>
+</article>
+{% endblock section1 %}

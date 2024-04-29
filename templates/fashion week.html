@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion weekSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> Peter Nygard: Fashion mogul guilty of sex assaults </h2>
+            
+<img src="https://ichef.bbci.co.uk/news/1024/branded_news/17B01/production/_131652079_gettyimages-513093348.jpg" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>
+In the wake of scandal and disgrace, a surprising voice has emerged from the shadows - the son of a once powerful mogul. This unexpected critic has not only spoken out against his own father&#x27;s actions but has become an advocate for justice and accountability. In this article, we delve into the story of the disgraced mogul&#x27;s son, his journey from darkness to light, and the impact he is making on the fight against injustice.
+
+The Rise to Power:
+Before we can understand the significance of the disgraced mogul&#x27;s son, we must first understand the rise and fall of his father. Once a titan in the industry, the mogul built an empire that seemed untouchable. His power and influence extended far and wide, with connections reaching the highest levels of government. However, his actions behind closed doors revealed a dark and sinister side that was hidden from the public eye.
+
+The Revelation:
+When the scandal broke, the public was shocked by the extent of the mogul&#x27;s wrongdoing. Allegations of abuse, harassment, and manipulation flooded the headlines, tarnishing the once untouchable figure. It was during this time that his son, who had long been shielded from his father&#x27;s true nature, began to question everything he thought he knew.
+
+Finding his Voice:
+As the truth came to light, the disgraced mogul&#x27;s son felt a profound sense of betrayal. He knew he couldn&#x27;t stay silent anymore. Stepping into the spotlight, he began speaking out against his father&#x27;s actions and condemning the culture of abuse and harassment that had allowed it to thrive. Through interviews, public statements, and social media platforms, he became a powerful voice for victims and survivors who had long been silenced.
+
+A Catalyst for Change:
+The son&#x27;s decision to confront his father and expose the truth had a ripple effect throughout the industry. It gave courage to others who had suffered in silence, inspiring them to share their own stories and seek justice. The disgraced mogul&#x27;s son became a catalyst for change, igniting a movement that demanded accountability and a dismantling of the toxic structures that had protected abusers for far too long.
+
+Supporting Survivors:
+Beyond speaking out against his father, the son has actively worked to support survivors of abuse and harassment. He has become involved with organizations dedicated to aiding victims, providing resources, and advocating for policy changes that protect individuals in vulnerable positions. His commitment to the cause goes beyond mere words, showcasing a genuine desire to make a difference.
+
+A Path to Redemption:
+In embracing the role of a vocal critic, the disgraced mogul&#x27;s son has also found his own path to redemption. By bringing to light the truth about his father and fighting for justice, he has transformed his own legacy from that of the son of an abuser to an advocate for change. While it doesn&#x27;t erase the pain caused by his father&#x27;s actions, it demonstrates a willingness to learn, grow, and use his platform for the greater good.
+
+Conclusion:
+The disgraced mogul&#x27;s son has emerged as a powerful voice against injustice, challenging the very foundations of a toxic culture. Through his courage, determination, and unwavering support for survivors, he has become a beacon of hope in an industry marred by scandal. In his journey from darkness to light, he has shown that redemption is possible, and that even the sons and daughters of the most powerful individuals can choose a different path.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

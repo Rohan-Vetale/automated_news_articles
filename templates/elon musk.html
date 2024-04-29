@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elon muskSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> Elon Musk’s Media Matters Lawsuit Will Have a ‘Chilling Effect’ </h2>
+            
+<img src="https://media.wired.com/photos/655bfdf6a4c20e577a00dca2/191:100/w_1280,c_limit/Elon-Musk-Lawsuit-Business-1258741663.jpg" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>
+In recent weeks, Tesla CEO Elon Musk has been facing significant backlash for his promotion of an antisemitic conspiracy theory, which has led several advertisers to reconsider promoting their products on the platform. With concerns mounting over potential financial implications, Musk has come forward with a bold message for these advertisers.
+
+Advertisers Pulling Back:
+Following his controversial actions, advertisers have shown a declining interest in advertising on platforms associated with Musk. This wave of pullbacks is estimated to amount to a potential loss of $75 million in ad revenue for Musk’s company, X.
+
+Musk&#x27;s Response:
+In response to the growing number of advertisers pulling back, Elon Musk recently addressed the situation in a public statement. He expressed his frustration with the decision-makers responsible for the ad pullbacks, and while his initial message may have been laced with frustration, he later reflected on the situation more thoughtfully.
+
+Musk acknowledged that advertisers have the right to choose where they allocate their resources, but he also pointed out that these actions can have broader implications on freedom of speech and the independence of online platforms.
+
+Addressing the Antisemitic Controversy:
+Musk also took the opportunity to address the controversy surrounding the promotion of an antisemitic conspiracy theory. He expressed regret for his role in amplifying such content and admitted his mistake. Musk emphasized that he does not condone hate speech or discrimination of any kind.
+
+Commitment to Learning:
+In an effort to repair the damage caused by his promotion of the conspiracy theory, Musk made a public commitment to educating himself on important issues, such as antisemitism. He recognized the responsibility that comes with his influential position and vowed to use it in a responsible and respectful manner.
+
+Working Towards Positive Change:
+Musk acknowledged that understanding diverse perspectives is crucial in today&#x27;s interconnected world. He expressed his willingness to engage in open dialogue and learn from others in order to foster a more inclusive environment. Furthermore, he stressed the importance of taking steps to ensure that hate speech and harmful conspiracy theories do not find a platform on his company&#x27;s platforms.
+
+Conclusion:
+Elon Musk finds himself grappling with the consequences of promoting an antisemitic conspiracy theory and the resulting loss of ad revenue for his company, X. While initially expressing frustration, Musk later reflected on the situation and acknowledged his mistake. His commitment to learning and fostering a more inclusive environment is a step in the right direction, and it remains to be seen how his actions will shape the future of the platform.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

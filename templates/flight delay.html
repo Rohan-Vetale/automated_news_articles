@@ -1,0 +1,223 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight delaySearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> Pesky Heat Shield Issue Threatens to Delay NASA&#x27;s First Crewed Moon Journey in Decades </h2>
+            
+<img src="https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/125fde5bae896e0a1e40fd62a3d264c8.jpg" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>Introduction:
+
+Space exploration has been a topic of great interest and fascination for humankind for centuries. In recent years, one company has been at the forefront of revolutionizing space travel - SpaceX. Led by entrepreneur Elon Musk, SpaceX has achieved numerous milestones in its quest to make space more accessible and ultimately enable humans to become a multi-planetary species. One of the key challenges in space exploration is propellant transfer, and SpaceX seems to be making significant progress in this area. According to recent reports, the company is on track to conduct a preliminary propellant transfer test in the coming year.
+
+The Significance of Propellant Transfer:
+
+Propellant transfer plays a crucial role in space travel as it enables spacecraft to carry more fuel and extend their range. It involves the transfer of fuel, such as liquid oxygen and liquid hydrogen, from one spacecraft to another. This capability is vital for longer and more complex missions, such as lunar landings, deep space exploration, and eventually, manned missions to Mars.
+
+SpaceX&#x27;s Progress:
+
+SpaceX has been making remarkable strides in developing technologies and techniques to further space exploration. The company&#x27;s next ambitious goal is to establish propellant transfer capabilities, which would significantly enhance the scope and range of its space missions.
+
+According to recent reports, SpaceX is on track to conduct a preliminary propellant transfer test sometime next year. This test will provide valuable insights into the feasibility and effectiveness of transferring fuel between spacecraft in space. It will also be a crucial step in SpaceX&#x27;s long-term vision of enabling humans to travel to Mars.
+
+The Challenges and Innovations:
+
+Propellant transfer in space is not without its challenges. One of the most significant obstacles is how to transfer fuel without it boiling off due to the harsh conditions of space. Engineers at SpaceX have been working tirelessly to develop innovative solutions to address this issue and ensure a successful propellant transfer.
+
+One approach SpaceX is exploring is the use of specially designed valves and seals that can maintain the integrity of the fuel during the transfer process. Additionally, the company is investing in advanced cooling technologies that can prevent fuel from overheating or expanding, thus optimizing transfer efficiency.
+
+The Implications of Successful Propellant Transfer:
+
+If SpaceX can successfully demonstrate the ability to transfer propellant in space, it would be a groundbreaking achievement not only for the company but for the entire space industry. This capability would enable longer-duration space missions, expand the range of exploration, and pave the way for more ambitious goals, such as establishing permanent human settlements on other celestial bodies.
+
+Moreover, successful propellant transfer would be a significant step towards realizing Elon Musk&#x27;s vision of making humans a multi-planetary species. Musk has repeatedly stressed the importance of becoming interplanetary in order to ensure the long-term survival of humanity. Achieving propellant transfer capabilities would bring this vision one step closer to reality.
+
+Conclusion:
+
+SpaceX&#x27;s progress in the field of space exploration continues to amaze and inspire. With its ambitious plans to establish propellant transfer capabilities, the company is pushing the boundaries of what is possible in space travel. The upcoming preliminary propellant transfer test could mark a significant milestone in SpaceX&#x27;s journey towards enabling human colonization of other planets. As we eagerly await the results of this test, it is clear that we are witnessing an incredibly exciting era in space exploration, thanks to the relentless efforts of companies like SpaceX.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

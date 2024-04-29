@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anil kapoorSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> Full Trailer for Indian Action Thriller Film &#x27;Animal&#x27; About Father &amp; Son </h2>
+            
+<img src="https://media2.firstshowing.net/firstshowing/img16/AnimalFullposterMainimgIndbigTW3.jpg" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>Introduction:
+
+Exciting news for all Anil Kapoor fans! The much-awaited first look of Anil Kapoor as Group Captain Rakesh Jai Singh from the upcoming movie &quot;Fighter&quot; has been unveiled. Alongside Kapoor, the film also stars the dynamic duo, Deepika Padukone, and Hrithik Roshan in lead roles. With such an incredible star cast, anticipation for this film is running high in the Bollywood industry and among fans worldwide.
+
+Main Body:
+
+Anil Kapoor, known for his versatility and incredible acting skills, is all set to don the role of Group Captain Rakesh Jai Singh in the movie &quot;Fighter.&quot; The first look has left fans in awe as Kapoor effortlessly portrays the dignity and charisma of an Air Force officer. With his suave demeanor and infectious energy, Kapoor is ready to enthrall audiences once again.
+
+&quot;Fighter&quot; marks the first collaboration between Anil Kapoor, Deepika Padukone, and Hrithik Roshan, making it one of the most highly anticipated films of the year. Fans are eager to witness the power-packed performances of this stellar cast on the big screen.
+
+Deepika Padukone, who has captured hearts with her remarkable performances in films like &quot;Chhapaak&quot; and &quot;Padmaavat,&quot; will be seen portraying a pivotal role in &quot;Fighter.&quot; Her previous ventures have showcased her versatility and ability to immerse herself in diverse characters, leaving audiences in awe. With her chemistry with Hrithik Roshan and Anil Kapoor promising to be electric, fans are eagerly awaiting this on-screen treat.
+
+Hrithik Roshan, known for his incredible dancing skills and intense portrayals, is set to raise the bar once again in &quot;Fighter.&quot; His previous collaborations with director Siddharth Anand, such as &quot;War&quot; and &quot;Bang Bang,&quot; have been massive successes at the box office. With his unmatched screen presence and stellar performances, Roshan is expected to deliver yet another memorable role.
+
+The film &quot;Fighter&quot; is being helmed by Siddharth Anand, who has previously directed successful films like &quot;War&quot; and &quot;Bang Bang.&quot; With his expertise in crafting high-octane action sequences and engaging storytelling, Anand has amassed a huge fan following. His collaboration with Anil Kapoor, Deepika Padukone, and Hrithik Roshan is sure to create magic on the silver screen.
+
+As more details about the film are awaited, fans are buzzing with excitement, eagerly anticipating its release. The combination of an intriguing storyline, remarkable performances, and eye-catching visuals makes &quot;Fighter&quot; a must-watch for all movie enthusiasts.
+
+In conclusion, the first look of Anil Kapoor as Group Captain Rakesh Jai Singh from &quot;Fighter&quot; has generated immense excitement among fans. With the addition of Deepika Padukone and Hrithik Roshan, this movie promises to be a cinematic extravaganza. Under the direction of Siddharth Anand, &quot;Fighter&quot; is poised to be a blockbuster that will captivate audiences and leave a lasting impact in the world of Bollywood. Fans can&#x27;t wait to witness the on-screen magic created by this incredible cast and crew.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

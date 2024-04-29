@@ -1,0 +1,200 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>general elections indiaSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Automated News Articles</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> India and Pakistan trade barbs over targeted killings </h2>
+            
+<img src="https://ichef.bbci.co.uk/news/1024/branded_news/DF70/production/_133100275_gettyimages-1258774418.jpg" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>Tensions between India and Pakistan are on the rise once again, following the publication of a news article alleging India&#x27;s involvement in at least twenty extrajudicial killings in Pakistan. This comes in the middle of a dynamic political period in both countries. In India, the general elections campaign is picking up steam and in Pakistan, citizens are demanding accountability regarding these severe accusations.
+
+The suspected extrajudicial killings have sparked outrage among citizens and politicians alike. The Pakistani government has strongly condemned the killings, calling for an independent international body to investigate the deaths. The Indian government, on the other hand, has not officially responded to these allegations. This has resulted in increasing pressure on the Indian PM, especially as he is navigating through election campaigning.
+
+This rising tension comes amidst an already tense bilateral relation that both nations have been trying to navigate. Events like the recent gunfight in eastern Chattisgarh state in India, just days before the elections, are adding to the already existing intensity. Details of the gunfight remain unclear at this moment, but civilian casualties have been reported.
+
+The general elections in India, which are scheduled to be held soon, have further amplified the situation. The Indian PM&#x27;s remarks on this situation are eagerly awaited by both citizens and political critics. As a leader, his comments will importantly set the tone for how India handles this crisis and maintains its relationship with Pakistan while keeping domestic peace intact. 
+
+In the broader regional context, this incident could significantly influence the peace and stability of South Asia. Cross-border tensions and incidents of violence can perpetuate instability, interrupt economic progress and, most importantly, put the lives of innocent civilians at risk.
+
+Addressing this crisis will require unified cooperation among South Asian nations and the international community. The need for effective diplomatic dialogues, to avoid such drastic incidents and the subsequent escalation of tensions in the future, has never been more crucial. 
+
+To conclude, the alleged extrajudicial killings in Pakistan reportedly involving India have stirred an apprehensive environment amid an already sensitive period due to elections in India. This calls for an earnest need for open and frank diplomatic channels and steps towards peace consensus to ensure regional stability. Furthermore, the responses and actions of the Indian government will be under a national and international spotlight, closely watched by many, as they will profoundly shape the future course of Indo-Pakistani relations.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

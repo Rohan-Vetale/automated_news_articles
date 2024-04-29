@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domestic violenceSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            background-color: #222;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+            
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        article {
+            flex: 0 1 80%; /* Adjust the width of each article */
+            margin: 10px;
+            background-color: #333; /* Darker background color for articles */
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* White box shadow for contrast */
+            transition: transform 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            color: #fff;
+            padding: 10px;
+            margin: 0;
+        }
+
+        p {
+            color: #ccc;
+            padding: 10px;
+            margin: 0;
+        }
+
+        a {
+            display: block;
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>
+<div style="text-align: center;">
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <iframe src="https://lottie.host/embed/8bc0d609-344d-4b17-b191-072ea1f34bf6/iF35NeguVJ.json" style="width: 100px; height: 90px; border: none; outline: none;"></iframe>
+        <span style="margin-left: 10px;">Automated News Articles</span>
+    </div>
+</div>
+</h1>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/search">Search</a>
+        <a href="/about">More</a>
+        <div class = "container1">
+        
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    
+     {% csrf_token %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+
+        </div class = "container1">
+    </nav>
+    
+    <section>
+        
+        
+        <article>
+            
+            <h2> The CDC&#x27;s Gun Violence Research Is in Danger </h2>
+            
+<img src="https://media.wired.com/photos/6567ae2b3e2f63900ec5d893/191:100/w_1280,c_limit/CDC-guns-sec-GettyImages-1246717458.jpg" alt="Giphy Image" class="img-fluid" >
+
+
+            <p>Introduction:
+
+In recent news, comedian and viral TikTok star Matt Rife has found himself at the center of controversy following the release of his Netflix special. Titled &quot;Rife and Hilarious,&quot; the stand-up special has sparked outrage and criticism for its insensitive jokes about domestic violence. Many viewers and advocates are speaking out against Rife, highlighting the harmful nature of his jokes and the potential negative influence they may have on his audience. As the discussion around the special continues to gain traction, it raises important questions about the responsibilities of comedians and the boundaries of humor in today&#x27;s society.
+
+Body:
+
+Rife&#x27;s Netflix special, which was highly anticipated by his fans, quickly became a lightning rod for controversy. In his performance, he made jokes that trivialized and minimized the seriousness of domestic violence, a topic that affects countless individuals worldwide. While Rife may argue that comedy is meant to push boundaries and challenge societal norms, it is crucial to recognize that certain topics, such as domestic violence, should never be the basis of humor.
+
+Critics argue that Rife&#x27;s jokes perpetuate harmful stereotypes and downplay the severity of domestic violence. By treating this issue as fodder for comedy, he not only disrespects survivors but also sends a troubling message to his audience. Domestic violence is a matter that requires empathy, understanding, and support, and it should never be used as a punchline for entertainment.
+
+Additionally, Rife&#x27;s jokes may have a detrimental impact on those who have experienced domestic violence or are currently in abusive relationships. It is crucial to remember that individuals who have suffered from such trauma often face stigma, shame, and difficulty in seeking help. By joking about their experiences, Rife may discourage survivors from speaking out and seeking the assistance they desperately need.
+
+Many advocates for survivors of domestic violence have condemned Rife&#x27;s Netflix special, and rightly so. Organizations and individuals alike are calling for greater accountability within the entertainment industry, urging platforms like Netflix to reconsider the content they endorse and promote. Comedy should be a form of entertainment that uplifts and unites people, not one that perpetuates harm and insensitivity.
+
+In response to the backlash, Rife issued a public apology on his social media platforms. He acknowledged the pain his jokes may have caused and expressed a commitment to learning from the criticism and being more sensitive in the future. While it is essential to acknowledge an apology when given, critics argue that Rife&#x27;s actions must go beyond mere words. They emphasize the importance of using his platform to raise awareness about domestic violence, support survivor organizations, and actively work towards dismantling harmful stereotypes rather than perpetuating them.
+
+This controversy surrounding Rife&#x27;s Netflix special raises broader questions about the responsibilities of comedians and the impact their jokes can have on society. While comedy has long been celebrated as a means of challenging societal norms and pushing boundaries, it is essential to consider the potential harm that can arise from certain jokes. Comedians have a unique platform to influence public opinion and shape conversations, making it vital for them to use their power responsibly.
+
+In conclusion, the controversy surrounding Matt Rife&#x27;s Netflix special underscores the need for greater awareness and sensitivity when it comes to discussing sensitive topics like domestic violence. Jokes that trivialize such issues can perpetuate harmful stereotypes and diminish the experiences of survivors. As audiences and consumers of entertainment, we must hold comedians and platforms accountable and demand content that promotes empathy, understanding, and respect for all. It is only through these actions that we can begin to foster a more inclusive and compassionate society.</p>
+            
+        </article>
+        
+
+        
+
+        
+
+        <!-- Add more articles as needed -->
+        
+    </section>
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+

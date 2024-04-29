@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title1 %}{{Queried}}Search{% endblock title1 %}
+{% block searchQuery %}
+<form class="row g-3 my-3" method = "post" action = "/search/">
+    {% csrf_token %}
+    {% block tokenBlock %} {{csrff}}{% endblock tokenBlock %} 
+    <div class="col-auto">
+      <label for="inputtext" class="visually-hidden">Search a topic</label>
+    </div>
+    <div class="col-auto ">
+      <input type="text" class="form-control" id="inputtext" placeholder="Your Interest" name = "queryText">
+    </div>
+    <div class="col-auto ">
+      <button type="submit" class="btn btn-primary px-2">Search</button>
+    </div>
+  </form>
+{% endblock searchQuery %}
+{% block title2 %} {{titlez}} {% endblock title2 %}
+{% block imgSec %}
+<img src="{{ imgUrl }}" alt="Giphy Image" class="img-fluid" >
+{% endblock imgSec %}
+{% block content1 %}{{Content}}{% endblock content1 %}
