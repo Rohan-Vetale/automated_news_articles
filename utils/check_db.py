@@ -53,5 +53,3 @@ def get_page(query):
         print("Done")
         return "Successful, Done"
 
-# Optionally, create a database entry with the query and file path
-# ... (Code to save the query and file path to the database)
