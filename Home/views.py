@@ -3,8 +3,8 @@ import os
 
 from django.shortcuts import render, HttpResponse
 from Home.models import SearchQ
-from fetch_content import get_content
-from check_db import get_page
+from utils.fetch_content import get_content
+from utils.check_db import get_page
 from django.conf import settings  # Import settings for accessing static file paths
 
 def home(request):
