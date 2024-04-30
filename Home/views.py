@@ -1,6 +1,16 @@
+"""
+@Author: Rohan Vetale
+
+@Date: 2024-4-30 19:44
+
+@Last Modified by: Rohan Vetale
+
+@Last Modified time: 2024-4-30 19:22
+
+@Title : The views module to render the pages
+"""
 from datetime import datetime
 import os
-
 from django.shortcuts import render, HttpResponse
 from Home.models import SearchQ
 from utils.fetch_content import get_content

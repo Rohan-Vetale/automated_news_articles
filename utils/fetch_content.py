@@ -1,4 +1,15 @@
-# contentAPI.py
+"""
+@Author: Rohan Vetale
+
+@Date: 2024-4-30 19:44
+
+@Last Modified by: Rohan Vetale
+
+@Last Modified time: 2024-4-30 19:22
+
+@Title : This module is used to fetch the content from the NewsAPI and GPT-4
+"""
+
 from os import getenv
 from newsapi import NewsApiClient
 from openai import OpenAI
@@ -30,16 +41,16 @@ def get_content(query):
         
         # Generate content using OpenAI's GPT-4 model
         if descriptions:
-          news_content = "\n".join([f"Article {i + 1}: {description}" for i, description in enumerate(descriptions)])
-          response = client.chat.completions.create(
-              model="gpt-4",
-              messages=[
-                  {"role": "system", "content": "You have to only generate and reply a news blog of 2 page content body. The title, related articles, some content is provided by the user from trusted sources. Skip the title part, start with introduction"},
-                  {"role": "user", "content": "Here it is " + news_content}
-              ]
-          )
-          final_content = response.choices[0].message.content
-          return title, img_url, final_content
+            news_content = "\n".join([f"Article {i + 1}: {description}" for i, description in enumerate(descriptions)])
+            response = client.chat.completions.create(
+                model="gpt-4",
+                messages=[
+                    {"role": "system", "content": "You have to only generate and reply a news blog of 2 page content body. The title, related articles, some content is provided by the user from trusted sources. Skip the title part, start with introduction"},
+                    {"role": "user", "content": "Here it is " + news_content}
+                ]
+            )
+            final_content = response.choices[0].message.content
+            return title, img_url, final_content
         else:
             raise Exception('No headlines found!')
     except Exception as e:

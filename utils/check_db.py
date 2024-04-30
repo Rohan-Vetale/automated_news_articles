@@ -1,3 +1,14 @@
+"""
+@Author: Rohan Vetale
+
+@Date: 2024-4-30 19:44
+
+@Last Modified by: Rohan Vetale
+
+@Last Modified time: 2024-4-30 19:22
+
+@Title : This module is used to check the user's query in DB or to generate the html page using fetch_content module
+"""
 import os
 from django.shortcuts import render, redirect
 from django.template.loader import render_to_string
@@ -8,7 +19,7 @@ from newsapi import NewsApiClient
 def get_page(query):
     """
     Check if the query already exists in the database.
-    If not, fetch content using contentAPI and render HTML template.
+    If not, fetch content using fetch_content and render HTML template.
     Save the rendered HTML content to a file.
     """
 
